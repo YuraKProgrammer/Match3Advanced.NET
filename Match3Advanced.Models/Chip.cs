@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Match3Advanced.Models
 {
-    public class Chip
+    public class Chip : IOnField
     {
         public ChipImageType ChipImageType { get; set; }
         public bool IsVerticalBonus { get; set; }
         public bool IsHorizontalBonus { get; set; }
         public string FileName { get; set; }
-        public bool ThereIsLabel { get; set; }
+        public IOnChip OnChip { get; set; }
         public bool isSuperstar()
         {
             return ChipImageType == ChipImageType.SUPERSTAR;

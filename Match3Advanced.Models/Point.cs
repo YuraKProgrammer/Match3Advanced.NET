@@ -13,7 +13,7 @@ namespace Match3Advanced.Models
 
         public Point(int x, int y)
         {
-            this.x = x; this.y = y;
+            this.X = x; this.Y = y;
         }
     }
 }

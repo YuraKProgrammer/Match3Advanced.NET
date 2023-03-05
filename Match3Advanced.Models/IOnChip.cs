@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Match3Advanced.Models
 {
-    public class Cell
+    public interface IOnChip
     {
-        public IOnField OnField { get; set; }
-
-        public Cell(IOnField onField)
-        {
-            OnField = onField;
-        }
+        public string FileName { get; set; }
     }
 }

@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Match3Advanced.DesktopClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Загрузка игры Три в ряд" Height="450" Width="800" Icon="/Match3Advanced.DesktopClient;component/images/icon.ico">
     <Grid>
-
+        <TextBlock Text="Три в ряд" Margin="125" TextAlignment="Center" FontSize="30" FontStretch="UltraCondensed" Foreground="Purple"/>
+        <ProgressBar Height="80" Width="700" IsIndeterminate="True" Foreground="Purple"/>
     </Grid>
 </Window>
