@@ -10,9 +10,12 @@ namespace Match3Advanced.Models
     {
         public IOnField OnField { get; set; }
 
-        public Cell(IOnField onField)
+        public IOnCell OnCell { get; set; }
+
+        public Cell(IOnField onField, IOnCell onCell)
         {
             OnField = onField;
+            OnCell = onCell;
         }
     }
 }

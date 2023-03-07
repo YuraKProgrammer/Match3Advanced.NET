@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Match3Advanced.Models
 {
-    public interface IOnChip
+    public interface IOnChip : IOnObject
     {
         public string FileName { get; set; }
     }

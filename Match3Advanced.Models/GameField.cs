@@ -26,19 +26,19 @@ namespace Match3Advanced.Models
             {
                 for (var y=0; y < heigth; y++) 
                 {
-                    cells[x, y] = new Cell(null);
+                    cells[x, y] = new Cell(null, null);
                 }
             }
         }
 
         public void SetOnField(Point point,IOnField onField)
         {
-            cells[point.X, point.Y] = new Cell(onField);
+            cells[point.X, point.Y] = new Cell(onField, null);
         }
 
         public void DeleteOnField(Point point)
         {
-            cells[point.X, point.Y] = new Cell(null);
+            cells[point.X, point.Y] = new Cell(null, null);
         }
     }
 }

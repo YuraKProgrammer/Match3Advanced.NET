@@ -1,9 +1,9 @@
-﻿using Match3Advanced.DesktopClient.Windows;
+﻿using Match3Advanced.Models;
+using Match3Advanced.ProgressStorage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,26 +12,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Match3Advanced.DesktopClient
+namespace Match3Advanced.DesktopClient.Windows
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MenuWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MenuWindow : Window
     {
-        public MainWindow()
+        public Progress Progress = new Progress(DateTime.UtcNow,5,new bool[1001]);
+        public IProgressStorage progressStorage = new TempProgressStorage();
+        public int CurrentLevelNumber = 1;
+
+        public MenuWindow()
         {
             InitializeComponent();
         }
 
-        public void Start(object sender, EventArgs e)
+        public void Update()
         {
-            _progress.IsIndeterminate = false;
-            Window window = new MenuWindow();
-            window.Show();
+
         }
     }
 }

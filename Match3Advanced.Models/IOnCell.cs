@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Match3Advanced.Models
 {
-    public interface IOnField : IOnObject
+    public interface IOnCell : IOnObject
     {
         public string FileName { get; set; }
     }

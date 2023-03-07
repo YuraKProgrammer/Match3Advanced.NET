@@ -40,6 +40,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Match3Advanced.Models\Match3Advanced.Models.csproj" />
+    <ProjectReference Include="..\Match3Advanced.ProgressStorage\Match3Advanced.ProgressStorage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="images\1.png" />
     <Resource Include="images\10.png" />
     <Resource Include="images\11.png" />
@@ -69,10 +74,6 @@
     <Resource Include="images\8.png" />
     <Resource Include="images\9.png" />
     <Resource Include="images\icon.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Windows\" />
   </ItemGroup>
 
 </Project>

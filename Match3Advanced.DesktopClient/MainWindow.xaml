@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="Загрузка игры Три в ряд" Height="450" Width="800" Icon="/Match3Advanced.DesktopClient;component/images/icon.ico">
     <Grid>
+        <TextBlock Text="Автор: YuraKProgrammer" FontSize="20"/>
         <TextBlock Text="Три в ряд" Margin="125" TextAlignment="Center" FontSize="30" FontStretch="UltraCondensed" Foreground="Purple"/>
-        <ProgressBar Height="80" Width="700" IsIndeterminate="True" Foreground="Purple"/>
+        <ProgressBar x:Name="_progress" Height="80" Width="700" Maximum="100" Minimum="0" Value="100" Foreground="Purple" IsIndeterminate="True"/>
+        <Button Click="Start" Margin="180,275,180,85" Content="Начать" FontSize="30" Foreground="Purple"/>
     </Grid>
 </Window>
