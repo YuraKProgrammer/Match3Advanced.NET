@@ -17,6 +17,13 @@ namespace Match3Advanced.Models
         public void GenerateField()
         {
             GameField = fieldGenerator.GenerateField(GameField);
-        } 
+        }
+
+        public Game(Level level)
+        {
+            Level = level;
+            GameField = Level.GameField;
+            GenerateField();
+        }
     }
 }

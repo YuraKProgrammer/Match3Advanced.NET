@@ -40,5 +40,10 @@ namespace Match3Advanced.Models
         {
             cells[point.X, point.Y] = new Cell(null, null);
         }
+
+        public Cell GetCell(Point Point)
+        {
+            return cells[Point.X, Point.Y];
+        }
     }
 }

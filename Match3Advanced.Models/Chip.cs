@@ -97,25 +97,25 @@ namespace Match3Advanced.Models
                         FileName = @"/Match3Advanced.DesktopClient;component/images/2.png";
                         break;
                     case ChipImageType.T3:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/3.png";
                         break;
                     case ChipImageType.T4:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/4.png";
                         break;
                     case ChipImageType.T5:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/5.png";
                         break;
                     case ChipImageType.T6:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/6.png";
                         break;
                     case ChipImageType.T7:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/7.png";
                         break;
                     case ChipImageType.T8:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/8.png";
                         break;
                     case ChipImageType.T9:
-                        FileName = @"/Match3Advanced.DesktopClient;component/images/1.png";
+                        FileName = @"/Match3Advanced.DesktopClient;component/images/9.png";
                         break;
                     case ChipImageType.SUPERSTAR:
                         FileName = @"/Match3Advanced.DesktopClient;component/images/28.png";

@@ -1,0 +1,27 @@
+﻿<Window x:Class="Match3Advanced.DesktopClient.Windows.LevelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Match3Advanced.DesktopClient.Windows"
+        mc:Ignorable="d"
+        Title="LevelWindow" Height="900" Width="1600" Icon="/Match3Advanced.DesktopClient;component/images/icon.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left">
+            <!-- Здесь пользоватльеский элемент управления, показывающий цели уровня -->
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+            <Canvas x:Name="_gameField" Width="1200" Height="900"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" HorizontalAlignment="Right">
+            <Button Content="Сдаться (-1 жизнь)" Foreground="Red" FontSize="20"/>
+            <Button Content="Перемешать фишки" Foreground="Blue" FontSize="20"/>
+            <Button Content="Режим разработчика" Foreground="Green" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Window>

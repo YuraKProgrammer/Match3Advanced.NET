@@ -19,6 +19,16 @@ namespace Match3Advanced.Models
             LevelResults[levelNumber + 1] = result;
         }
 
+        public bool GetValue(int levelNumber)
+        {
+            return LevelResults[levelNumber + 1];
+        }
+
+        public bool[] GetResults()
+        {
+            return LevelResults;
+        }
+
         public Progress(DateTime dateTime, int lifes, bool[] levelResults)
         {
             DateTime = dateTime;

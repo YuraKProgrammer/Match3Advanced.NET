@@ -11,7 +11,7 @@ namespace Match3Advanced.ProgressStorage
     {
         public Progress Load()
         {
-            throw new NotImplementedException();
+            return new Progress(DateTime.UtcNow, 5, new bool[1001]);
         }
 
         public List<Progress> LoadAll()
@@ -21,7 +21,6 @@ namespace Match3Advanced.ProgressStorage
 
         public void Save(Progress progress)
         {
-            throw new NotImplementedException();
         }
     }
 }

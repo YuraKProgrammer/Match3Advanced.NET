@@ -8,5 +8,14 @@ namespace Match3Advanced.Models
 {
     public class Level
     {
+        public GameField GameField { get; set; }
+
+        public List<Purpose> purposes { get; set; }
+
+        public Level(GameField gameField, List<Purpose> purposes)
+        {
+            GameField = gameField;
+            this.purposes = purposes;
+        }
     }
 }
